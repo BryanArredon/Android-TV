@@ -1,0 +1,175 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="mx.utng.smarthealthmonitor.tv"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="35" />
+10    <!-- Declarar que es una app de TV -->
+11    <uses-feature
+11-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:5:5-6:35
+12        android:name="android.software.leanback"
+12-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:5:19-59
+13        android:required="true" />
+13-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:6:9-32
+14    <!-- No requiere pantalla táctil -->
+15    <uses-feature
+15-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:8:5-9:36
+16        android:name="android.hardware.touchscreen"
+16-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:8:19-62
+17        android:required="false" />
+17-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:9:9-33
+18
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->[androidx.media3:media3-common:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/44033f65ef47a6bce34f91c19b1d871c/transformed/jetified-media3-common-1.4.1/AndroidManifest.xml:22:5-79
+19-->[androidx.media3:media3-common:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/44033f65ef47a6bce34f91c19b1d871c/transformed/jetified-media3-common-1.4.1/AndroidManifest.xml:22:22-76
+20
+21    <permission
+21-->[androidx.core:core:1.16.0] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/db8715120616b3ab9832021350684ef6/transformed/core-1.16.0/AndroidManifest.xml:22:5-24:47
+22        android:name="mx.utng.smarthealthmonitor.tv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+22-->[androidx.core:core:1.16.0] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/db8715120616b3ab9832021350684ef6/transformed/core-1.16.0/AndroidManifest.xml:23:9-81
+23        android:protectionLevel="signature" />
+23-->[androidx.core:core:1.16.0] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/db8715120616b3ab9832021350684ef6/transformed/core-1.16.0/AndroidManifest.xml:24:9-44
+24
+25    <uses-permission android:name="mx.utng.smarthealthmonitor.tv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+25-->[androidx.core:core:1.16.0] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/db8715120616b3ab9832021350684ef6/transformed/core-1.16.0/AndroidManifest.xml:26:5-97
+25-->[androidx.core:core:1.16.0] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/db8715120616b3ab9832021350684ef6/transformed/core-1.16.0/AndroidManifest.xml:26:22-94
+26
+27    <application
+27-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:11:5-30:19
+28        android:name="mx.utng.smarthealthmonitor.tv.SmartHealthApp"
+28-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:12:9-39
+29        android:allowBackup="true"
+29-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:13:9-35
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.16.0] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/db8715120616b3ab9832021350684ef6/transformed/core-1.16.0/AndroidManifest.xml:28:18-86
+31        android:banner="@drawable/banner_tv"
+31-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:18:9-45
+32        android:debuggable="true"
+33        android:extractNativeLibs="false"
+34        android:icon="@mipmap/ic_launcher"
+34-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:14:9-43
+35        android:label="SmartHealth TV"
+35-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:15:9-39
+36        android:supportsRtl="true"
+36-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:16:9-35
+37        android:theme="@style/Theme.SmartHealthTV" > <!-- 320x180dp -->
+37-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:17:9-51
+38
+39        <activity
+39-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:21:9-29:20
+40            android:name="mx.utng.smarthealthmonitor.tv.TVActivity"
+40-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:21:19-74
+41            android:exported="true"
+41-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:22:13-36
+42            android:label="SmartHealth TV" >
+42-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:23:13-43
+43            <intent-filter>
+43-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:24:13-28:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:25:17-69
+44-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:25:25-66
+45                <!-- Categoría LEANBACK_LAUNCHER: aparece en launcher TV -->
+46                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+46-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:27:17-86
+46-->/Volumes/RespaldoMacbook/LeanbackLibraryNavegacinDpad/tv/src/main/AndroidManifest.xml:27:27-83
+47            </intent-filter>
+48        </activity>
+49        <activity
+49-->[androidx.compose.ui:ui-test-manifest:1.10.3] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/c107d277749750573aa1ad167ee62681/transformed/jetified-ui-test-manifest-1.10.3/AndroidManifest.xml:23:9-26:79
+50            android:name="androidx.activity.ComponentActivity"
+50-->[androidx.compose.ui:ui-test-manifest:1.10.3] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/c107d277749750573aa1ad167ee62681/transformed/jetified-ui-test-manifest-1.10.3/AndroidManifest.xml:24:13-63
+51            android:exported="true"
+51-->[androidx.compose.ui:ui-test-manifest:1.10.3] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/c107d277749750573aa1ad167ee62681/transformed/jetified-ui-test-manifest-1.10.3/AndroidManifest.xml:25:13-36
+52            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
+52-->[androidx.compose.ui:ui-test-manifest:1.10.3] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/c107d277749750573aa1ad167ee62681/transformed/jetified-ui-test-manifest-1.10.3/AndroidManifest.xml:26:13-76
+53        <activity
+53-->[androidx.compose.ui:ui-tooling-android:1.10.3] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/6e96abbe751f79531ea18c961b2b8bae/transformed/jetified-ui-tooling/AndroidManifest.xml:23:9-25:39
+54            android:name="androidx.compose.ui.tooling.PreviewActivity"
+54-->[androidx.compose.ui:ui-tooling-android:1.10.3] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/6e96abbe751f79531ea18c961b2b8bae/transformed/jetified-ui-tooling/AndroidManifest.xml:24:13-71
+55            android:exported="true" />
+55-->[androidx.compose.ui:ui-tooling-android:1.10.3] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/6e96abbe751f79531ea18c961b2b8bae/transformed/jetified-ui-tooling/AndroidManifest.xml:25:13-36
+56
+57        <provider
+57-->[androidx.emoji2:emoji2:1.4.0] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/733a34f4ec33884ed0ee34717f1d8bb8/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+58            android:name="androidx.startup.InitializationProvider"
+58-->[androidx.emoji2:emoji2:1.4.0] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/733a34f4ec33884ed0ee34717f1d8bb8/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:25:13-67
+59            android:authorities="mx.utng.smarthealthmonitor.tv.androidx-startup"
+59-->[androidx.emoji2:emoji2:1.4.0] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/733a34f4ec33884ed0ee34717f1d8bb8/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:26:13-68
+60            android:exported="false" >
+60-->[androidx.emoji2:emoji2:1.4.0] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/733a34f4ec33884ed0ee34717f1d8bb8/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:27:13-37
+61            <meta-data
+61-->[androidx.emoji2:emoji2:1.4.0] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/733a34f4ec33884ed0ee34717f1d8bb8/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+62                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+62-->[androidx.emoji2:emoji2:1.4.0] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/733a34f4ec33884ed0ee34717f1d8bb8/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:30:17-75
+63                android:value="androidx.startup" />
+63-->[androidx.emoji2:emoji2:1.4.0] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/733a34f4ec33884ed0ee34717f1d8bb8/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:31:17-49
+64            <meta-data
+64-->[androidx.lifecycle:lifecycle-process:2.9.4] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/16e86dcf6e47c49dfb344ed9bd7ecf28/transformed/jetified-lifecycle-process-2.9.4/AndroidManifest.xml:29:13-31:52
+65                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+65-->[androidx.lifecycle:lifecycle-process:2.9.4] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/16e86dcf6e47c49dfb344ed9bd7ecf28/transformed/jetified-lifecycle-process-2.9.4/AndroidManifest.xml:30:17-78
+66                android:value="androidx.startup" />
+66-->[androidx.lifecycle:lifecycle-process:2.9.4] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/16e86dcf6e47c49dfb344ed9bd7ecf28/transformed/jetified-lifecycle-process-2.9.4/AndroidManifest.xml:31:17-49
+67            <meta-data
+67-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/01b694310d237aa8db1cba145f95c535/transformed/jetified-profileinstaller-1.4.1/AndroidManifest.xml:29:13-31:52
+68                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+68-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/01b694310d237aa8db1cba145f95c535/transformed/jetified-profileinstaller-1.4.1/AndroidManifest.xml:30:17-85
+69                android:value="androidx.startup" />
+69-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/01b694310d237aa8db1cba145f95c535/transformed/jetified-profileinstaller-1.4.1/AndroidManifest.xml:31:17-49
+70        </provider>
+71
+72        <uses-library
+72-->[androidx.window:window:1.5.0] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/c6d2e2dbb089486c3c41b8806a8fa010/transformed/jetified-window-1.5.0/AndroidManifest.xml:23:9-25:40
+73            android:name="androidx.window.extensions"
+73-->[androidx.window:window:1.5.0] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/c6d2e2dbb089486c3c41b8806a8fa010/transformed/jetified-window-1.5.0/AndroidManifest.xml:24:13-54
+74            android:required="false" />
+74-->[androidx.window:window:1.5.0] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/c6d2e2dbb089486c3c41b8806a8fa010/transformed/jetified-window-1.5.0/AndroidManifest.xml:25:13-37
+75        <uses-library
+75-->[androidx.window:window:1.5.0] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/c6d2e2dbb089486c3c41b8806a8fa010/transformed/jetified-window-1.5.0/AndroidManifest.xml:26:9-28:40
+76            android:name="androidx.window.sidecar"
+76-->[androidx.window:window:1.5.0] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/c6d2e2dbb089486c3c41b8806a8fa010/transformed/jetified-window-1.5.0/AndroidManifest.xml:27:13-51
+77            android:required="false" />
+77-->[androidx.window:window:1.5.0] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/c6d2e2dbb089486c3c41b8806a8fa010/transformed/jetified-window-1.5.0/AndroidManifest.xml:28:13-37
+78
+79        <receiver
+79-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/01b694310d237aa8db1cba145f95c535/transformed/jetified-profileinstaller-1.4.1/AndroidManifest.xml:34:9-52:20
+80            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+80-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/01b694310d237aa8db1cba145f95c535/transformed/jetified-profileinstaller-1.4.1/AndroidManifest.xml:35:13-76
+81            android:directBootAware="false"
+81-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/01b694310d237aa8db1cba145f95c535/transformed/jetified-profileinstaller-1.4.1/AndroidManifest.xml:36:13-44
+82            android:enabled="true"
+82-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/01b694310d237aa8db1cba145f95c535/transformed/jetified-profileinstaller-1.4.1/AndroidManifest.xml:37:13-35
+83            android:exported="true"
+83-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/01b694310d237aa8db1cba145f95c535/transformed/jetified-profileinstaller-1.4.1/AndroidManifest.xml:38:13-36
+84            android:permission="android.permission.DUMP" >
+84-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/01b694310d237aa8db1cba145f95c535/transformed/jetified-profileinstaller-1.4.1/AndroidManifest.xml:39:13-57
+85            <intent-filter>
+85-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/01b694310d237aa8db1cba145f95c535/transformed/jetified-profileinstaller-1.4.1/AndroidManifest.xml:40:13-42:29
+86                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+86-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/01b694310d237aa8db1cba145f95c535/transformed/jetified-profileinstaller-1.4.1/AndroidManifest.xml:41:17-91
+86-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/01b694310d237aa8db1cba145f95c535/transformed/jetified-profileinstaller-1.4.1/AndroidManifest.xml:41:25-88
+87            </intent-filter>
+88            <intent-filter>
+88-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/01b694310d237aa8db1cba145f95c535/transformed/jetified-profileinstaller-1.4.1/AndroidManifest.xml:43:13-45:29
+89                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+89-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/01b694310d237aa8db1cba145f95c535/transformed/jetified-profileinstaller-1.4.1/AndroidManifest.xml:44:17-85
+89-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/01b694310d237aa8db1cba145f95c535/transformed/jetified-profileinstaller-1.4.1/AndroidManifest.xml:44:25-82
+90            </intent-filter>
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/01b694310d237aa8db1cba145f95c535/transformed/jetified-profileinstaller-1.4.1/AndroidManifest.xml:46:13-48:29
+92                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+92-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/01b694310d237aa8db1cba145f95c535/transformed/jetified-profileinstaller-1.4.1/AndroidManifest.xml:47:17-88
+92-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/01b694310d237aa8db1cba145f95c535/transformed/jetified-profileinstaller-1.4.1/AndroidManifest.xml:47:25-85
+93            </intent-filter>
+94            <intent-filter>
+94-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/01b694310d237aa8db1cba145f95c535/transformed/jetified-profileinstaller-1.4.1/AndroidManifest.xml:49:13-51:29
+95                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+95-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/01b694310d237aa8db1cba145f95c535/transformed/jetified-profileinstaller-1.4.1/AndroidManifest.xml:50:17-95
+95-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/01b694310d237aa8db1cba145f95c535/transformed/jetified-profileinstaller-1.4.1/AndroidManifest.xml:50:25-92
+96            </intent-filter>
+97        </receiver>
+98    </application>
+99
+100</manifest>

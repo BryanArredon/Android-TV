@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sh_amber">#FFBF00</color>
+    <color name="sh_dark">#121212</color>
+    <color name="sh_primary">#1B4F8A</color>
+    <string name="app_name">SmartHealth TV</string>
+    <style name="Theme.SmartHealthTV" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/sh_primary</item>
+        <item name="colorAccent">@color/sh_amber</item>
+    </style>
+</resources>
