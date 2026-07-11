@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "mx.utng.smarthealthmonitor.tv-mergeDebugResources-56:/values-port/values-port.xml",
+            "outputFile": "mx.utng.smarthealthmonitor.tv-mergeDebugResources-62:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "/Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/13451672a9c6b2f3c4fbc40d27f538bc/transformed/appcompat-1.7.0/res/values-port/values-port.xml",
+                    "source": "/Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/37fc25503c305ea883633fe70d1a29ba/transformed/appcompat-1.7.0/res/values-port/values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
