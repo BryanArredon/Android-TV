@@ -4,7 +4,7 @@
             "outputFile": "mx.utng.smarthealthmonitor.tv-mergeDebugResources-62:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "/Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/37fc25503c305ea883633fe70d1a29ba/transformed/appcompat-1.7.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "/Users/juanfranciscomanzanogarcia/.gradle/caches/9.4.1/transforms/662a1ed79f05cc611452f317aa6db590/transformed/appcompat-1.7.0/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

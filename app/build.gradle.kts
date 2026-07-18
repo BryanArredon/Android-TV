@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
@@ -43,12 +44,20 @@ dependencies {
     implementation("androidx.compose.material3:material3")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.lifecycle.runtime.compose)
     implementation(libs.androidx.tv.foundation)
     implementation(libs.androidx.tv.material)
     
     // Cast SDK
     implementation(libs.androidx.mediarouter)
     implementation(libs.google.play.services.cast.framework)
+
+    // MQTT
+    implementation(libs.mqtt.paho)
+    implementation(libs.mqtt.paho.service)
+    implementation(libs.kotlinx.serialization.json)
 
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)

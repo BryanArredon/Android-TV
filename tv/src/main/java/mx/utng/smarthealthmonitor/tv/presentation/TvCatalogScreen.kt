@@ -5,6 +5,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
@@ -24,6 +25,24 @@ fun TvCatalogScreen(
     Column(Modifier.fillMaxSize().padding(32.dp)) {
         Text("SmartHealth TV Catalog", style = MaterialTheme.typography.headlineMedium)
         
+        Text(
+            text = if (state.isLoading) "⏳ Conectando a MQTT..." else "✅ Conectado a HiveMQ",
+            color = if (state.isLoading) Color.Yellow else Color.Cyan,
+            style = MaterialTheme.typography.bodySmall
+        )
+
+        if (state.fcActual > 0) {
+            Text(
+                "FC Real-time: ${state.fcActual} bpm (${state.fcEstado}) - ${state.ultimaHora}",
+                style = MaterialTheme.typography.titleMedium,
+                color = Color.Green
+            )
+        } else {
+            Text("Esperando datos del reloj...", color = Color.Gray)
+        }
+        
+        Spacer(modifier = Modifier.height(16.dp))
+
         LazyColumn(
             verticalArrangement = Arrangement.spacedBy(16.dp),
             modifier = Modifier.fillMaxSize()
@@ -38,8 +57,11 @@ fun TvCatalogScreen(
                     )
                 ) {
                     Row(
-                        modifier = Modifier.padding(16.dp),
-                        horizontalArrangement = Arrangement.SpaceBetween
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(16.dp),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
                     ) {
                         Text("${lectura.bpm} bpm", style = MaterialTheme.typography.titleLarge)
                         Text(lectura.hora, style = MaterialTheme.typography.bodyMedium)

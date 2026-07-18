@@ -7,6 +7,10 @@
     <uses-sdk
         android:minSdkVersion="23"
         android:targetSdkVersion="35" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <!-- Declarar que es una app de TV -->
     <uses-feature
         android:name="android.software.leanback"
@@ -16,7 +20,6 @@
         android:name="android.hardware.touchscreen"
         android:required="false" />
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <queries>
@@ -28,7 +31,6 @@
         android:protectionLevel="signature" />
 
     <uses-permission android:name="mx.utng.smarthealthmonitor.tv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name="mx.utng.smarthealthmonitor.tv.SmartHealthApp"
@@ -40,7 +42,10 @@
         android:icon="@mipmap/ic_launcher"
         android:label="SmartHealth TV"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.SmartHealthTV" > <!-- 320x180dp -->
+
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
 
         <activity
             android:name="mx.utng.smarthealthmonitor.tv.TVActivity"

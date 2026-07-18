@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.google.devtools.ksp)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
@@ -62,7 +63,13 @@ dependencies {
     // Compartir con módulo app
     implementation(project(":app"))
     
+    // MQTT
+    implementation(libs.mqtt.paho)
+    implementation(libs.mqtt.paho.service)
+    implementation(libs.kotlinx.serialization.json)
+    
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     
     debugImplementation(libs.androidx.compose.ui.tooling)

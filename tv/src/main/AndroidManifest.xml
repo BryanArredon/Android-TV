@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <!-- Declarar que es una app de TV -->
     <uses-feature android:name="android.software.leanback"
         android:required="true" />
@@ -16,7 +20,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartHealthTV"
         android:banner="@drawable/banner_tv"
-        tools:replace="android:icon,android:label,android:theme,android:allowBackup,android:supportsRtl,android:banner"> <!-- 320x180dp -->
+        tools:replace="android:icon,android:label,android:theme,android:allowBackup,android:supportsRtl,android:banner,android:name"> <!-- 320x180dp -->
+
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
 
         <activity android:name="mx.utng.smarthealthmonitor.tv.TVActivity"
             android:exported="true"
